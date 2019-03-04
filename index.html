@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+    <title></title>
+  </head>
+  <body>
+  <h1>LETS GAME</h1>
+
+        <button id="new-game" class="btn-info btn">RESTART</button>
+
+        <h1>Enter Player Name</h1>
+          <form id="player-1">
+            <div class="form-group">
+              <label for="player1Name">Player 1 Name:</label>
+              <input required class="player1Name form-control" type="text">
+            </div>
+          </form>
+          <div>
+          <form id="player-2">
+            <div class="form-group">
+              <label for="Player2Name">Player 2 Name:</label>
+              <input required class="player2Name form-control" type="text">
+            </div>
+          </form>
+          <button id="start" class="btn-info btn">Start</button>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="play"><b>Let's Play</b></p>
+          <h2>Player 1: <span id="player1Name"><span></h2>
+          <div id="the-button">
+            <button id="roll-die-button-1" class="btn-info btn">Roll</button>
+            <button id="hold-button-1" class="btn-info btn">Hold</button>
+          </div>
+          <br>
+          <h3>Dice Roll: <span id="die-roll-1"></span></h3>
+          <p>Round Total: <span id="round-score-1"></span></p>
+          <h2>Total Score: <span id="total-score-1"></span></h2>
+          <br>
+          <br>
+        </div>
+        <br>
+        <br>
+        <div class="col-md-6">
+          <h2>Player 2: <span id="player2Name"><span></h2>
+            <div id="the-button">
+              <button id="roll-die-button-2" class="btn-info btn">Roll</button>
+              <button id="hold-button-2" class="btn-info btn">Hold</button>
+            </div>
+            <br>
+            <h3>Dice Roll: <span id="die-roll-2"></span></h3>
+            <p>Round Total: <span id="round-score-2"></span></p>
+             <h2>Total Score: <span id="total-score-2"></span></h2>
+            <br>
+            <br>
+        </div>
+      </div>
+
+  </body>
+</html>
